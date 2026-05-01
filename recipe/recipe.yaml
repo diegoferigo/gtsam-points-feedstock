@@ -50,7 +50,7 @@ outputs:
         - cmake --build build/
         - if: build_platform == target_platform and cuda_compiler_version == "None"
           then:
-          - ctest --test-dir build/ --rerun-failed --output-on-failure
+            - ctest --test-dir build/ --rerun-failed --output-on-failure
     requirements:
       build:
         - ${{ compiler('c') }}
