@@ -29,6 +29,12 @@ description = "Build gtsam-points-feedstock with variant linux_64_cuda_compiler_
 [tasks."inspect-linux_64_cuda_compiler_version12.9"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_cuda_compiler_version12.9.yaml"
 description = "List contents of gtsam-points-feedstock packages built for variant linux_64_cuda_compiler_version12.9"
+[tasks."build-linux_64_cuda_compiler_version13.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_cuda_compiler_version13.0.yaml"
+description = "Build gtsam-points-feedstock with variant linux_64_cuda_compiler_version13.0 directly (without setup scripts)"
+[tasks."inspect-linux_64_cuda_compiler_version13.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_cuda_compiler_version13.0.yaml"
+description = "List contents of gtsam-points-feedstock packages built for variant linux_64_cuda_compiler_version13.0"
 [tasks."build-linux_64_cuda_compiler_versionNone"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_cuda_compiler_versionNone.yaml"
 description = "Build gtsam-points-feedstock with variant linux_64_cuda_compiler_versionNone directly (without setup scripts)"
@@ -41,6 +47,12 @@ description = "Build gtsam-points-feedstock with variant linux_aarch64_cuda_comp
 [tasks."inspect-linux_aarch64_cuda_compiler_version12.9"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_cuda_compiler_version12.9.yaml"
 description = "List contents of gtsam-points-feedstock packages built for variant linux_aarch64_cuda_compiler_version12.9"
+[tasks."build-linux_aarch64_cuda_compiler_version13.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_cuda_compiler_version13.0.yaml"
+description = "Build gtsam-points-feedstock with variant linux_aarch64_cuda_compiler_version13.0 directly (without setup scripts)"
+[tasks."inspect-linux_aarch64_cuda_compiler_version13.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_cuda_compiler_version13.0.yaml"
+description = "List contents of gtsam-points-feedstock packages built for variant linux_aarch64_cuda_compiler_version13.0"
 [tasks."build-linux_aarch64_cuda_compiler_versionNone"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_cuda_compiler_versionNone.yaml"
 description = "Build gtsam-points-feedstock with variant linux_aarch64_cuda_compiler_versionNone directly (without setup scripts)"
