@@ -3,7 +3,7 @@ schema_version: 1
 context:
   name: gtsam-points
   version: "1.2.1"
-  build_number: 2
+  build_number: 3
 
 recipe:
   name: ${{ name|lower }}-split
